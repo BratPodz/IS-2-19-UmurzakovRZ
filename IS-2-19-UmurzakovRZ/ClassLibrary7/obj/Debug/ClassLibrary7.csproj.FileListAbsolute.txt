@@ -1,6 +1,0 @@
-C:\Users\victo\source\repos\IS-2-19-UmurzakovRZ\ClassLibrary7\bin\Debug\ClassLibrary7.dll
-C:\Users\victo\source\repos\IS-2-19-UmurzakovRZ\ClassLibrary7\bin\Debug\ClassLibrary7.pdb
-C:\Users\victo\source\repos\IS-2-19-UmurzakovRZ\ClassLibrary7\obj\Debug\ClassLibrary7.csprojAssemblyReference.cache
-C:\Users\victo\source\repos\IS-2-19-UmurzakovRZ\ClassLibrary7\obj\Debug\ClassLibrary7.csproj.CoreCompileInputs.cache
-C:\Users\victo\source\repos\IS-2-19-UmurzakovRZ\ClassLibrary7\obj\Debug\ClassLibrary7.dll
-C:\Users\victo\source\repos\IS-2-19-UmurzakovRZ\ClassLibrary7\obj\Debug\ClassLibrary7.pdb
