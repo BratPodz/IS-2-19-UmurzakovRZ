@@ -45,7 +45,7 @@ namespace IS_2_19_UmurzakovRZ
             }
             catch
             {
-                MessageBox.Show("Ошибка подключения");
+                MessageBox.Show("Ошибка");
             }
             finally
             {

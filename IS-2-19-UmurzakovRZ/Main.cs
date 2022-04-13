@@ -19,8 +19,8 @@ namespace IS_2_19_UmurzakovRZ
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
-            f.Show();
+            Form1 a = new Form1();
+            a.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
