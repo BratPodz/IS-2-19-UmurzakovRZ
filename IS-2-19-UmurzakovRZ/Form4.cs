@@ -21,11 +21,11 @@ namespace IS_2_19_UmurzakovRZ
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            string sql = $"SELECT idStud, fioStud, drStud FROM t_datetime";
+            string s= $"SELECT idStud, fioStud, drStud FROM t_datetime";
             try
             {
                 conn.Open();
-                MySqlDataAdapter IDataAdapter = new MySqlDataAdapter(sql, conn);
+                MySqlDataAdapter IDataAdapter = new MySqlDataAdapter(s, conn);
                 DataSet dataset = new DataSet();
                 IDataAdapter.Fill(dataset);
                 dataGridView1.DataSource = dataset.Tables[0];
@@ -43,7 +43,7 @@ namespace IS_2_19_UmurzakovRZ
 
         MySqlConnection conn = new MySqlConnection(Con.C());
 
-        string id_rows5 = "0";
+        string id = "0";
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -52,12 +52,12 @@ namespace IS_2_19_UmurzakovRZ
                 dataGridView1.CurrentCell = dataGridView1[e.ColumnIndex, e.RowIndex];
                 dataGridView1.CurrentRow.Selected = true;
 
-                string index_rows5;
-                index_rows5 = dataGridView1.SelectedCells[0].RowIndex.ToString();
+                string index;
+                index = dataGridView1.SelectedCells[0].RowIndex.ToString();
 
-                id_rows5 = dataGridView1.Rows[Convert.ToInt32(index_rows5)].Cells[2].Value.ToString();
+                id = dataGridView1.Rows[Convert.ToInt32(index)].Cells[2].Value.ToString();
                 DateTime todays_date = DateTime.Today;
-                DateTime Date_of_Birth = Convert.ToDateTime(dataGridView1.Rows[Convert.ToInt32(index_rows5)].Cells[2].Value.ToString());
+                DateTime Date_of_Birth = Convert.ToDateTime(dataGridView1.Rows[Convert.ToInt32(index)].Cells[2].Value.ToString());
                 string result = (todays_date - Date_of_Birth).ToString();
                 MessageBox.Show("Со дня рождения прошло " + result.Substring(0, result.Length - 9) + " дней");
             }

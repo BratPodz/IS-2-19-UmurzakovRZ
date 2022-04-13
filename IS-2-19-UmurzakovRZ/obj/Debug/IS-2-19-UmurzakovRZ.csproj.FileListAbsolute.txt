@@ -1,0 +1,8 @@
+C:\Users\victo\Source\Repos\IS-2-19-UmurzakovRZ1\IS-2-19-UmurzakovRZ\obj\Debug\IS-2-19-UmurzakovRZ.csprojAssemblyReference.cache
+C:\Users\victo\Source\Repos\IS-2-19-UmurzakovRZ1\IS-2-19-UmurzakovRZ\obj\Debug\IS_2_19_UmurzakovRZ.Form1.resources
+C:\Users\victo\Source\Repos\IS-2-19-UmurzakovRZ1\IS-2-19-UmurzakovRZ\obj\Debug\IS_2_19_UmurzakovRZ.Form2.resources
+C:\Users\victo\Source\Repos\IS-2-19-UmurzakovRZ1\IS-2-19-UmurzakovRZ\obj\Debug\IS_2_19_UmurzakovRZ.Form3.resources
+C:\Users\victo\Source\Repos\IS-2-19-UmurzakovRZ1\IS-2-19-UmurzakovRZ\obj\Debug\IS_2_19_UmurzakovRZ.Form4.resources
+C:\Users\victo\Source\Repos\IS-2-19-UmurzakovRZ1\IS-2-19-UmurzakovRZ\obj\Debug\IS_2_19_UmurzakovRZ.Form5.resources
+C:\Users\victo\Source\Repos\IS-2-19-UmurzakovRZ1\IS-2-19-UmurzakovRZ\obj\Debug\IS_2_19_UmurzakovRZ.Main.resources
+C:\Users\victo\Source\Repos\IS-2-19-UmurzakovRZ1\IS-2-19-UmurzakovRZ\obj\Debug\IS-2-19-UmurzakovRZ.csproj.GenerateResource.cache

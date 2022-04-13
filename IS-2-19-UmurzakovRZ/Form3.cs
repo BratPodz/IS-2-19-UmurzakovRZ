@@ -21,19 +21,19 @@ namespace IS_2_19_UmurzakovRZ
         }
         MySqlConnection conn = new MySqlConnection(Con.C());
 
-        string id_selected_rows = "0";
+        string id = "0";
 
 
         private MySqlDataAdapter MyDA = new MySqlDataAdapter();
         private BindingSource bSource = new BindingSource();
         private DataTable table = new DataTable();
 
-        public void GetSelectedIDString()
+        public void SelectedRows()
         {
-            string index_selected_rows;
-            index_selected_rows = dataGridView1.SelectedCells[0].RowIndex.ToString();
-            id_selected_rows = dataGridView1.Rows[Convert.ToInt32(index_selected_rows)].Cells[1].Value.ToString();
-            MessageBox.Show(id_selected_rows);
+            string index_selected;
+            index_selected = dataGridView1.SelectedCells[0].RowIndex.ToString();
+            id_selected_rows = dataGridView1.Rows[Convert.ToInt32(index_selected)].Cells[1].Value.ToString();
+            MessageBox.Show(id);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,8 +41,8 @@ namespace IS_2_19_UmurzakovRZ
             try
             {
                 conn.Open();
-                string sql = $"SELECT id, fio, theme_kurs FROM t_stud";
-                MyDA.SelectCommand = new MySqlCommand(sql, conn);
+                string s = $"SELECT id, fio, theme_kurs FROM t_stud";
+                MyDA.SelectCommand = new MySqlCommand(s, conn);
                 MyDA.Fill(table);
                 bSource.DataSource = table;
                 dataGridView1.DataSource = bSource;
@@ -63,7 +63,7 @@ namespace IS_2_19_UmurzakovRZ
         {
             dataGridView1.CurrentCell = dataGridView1[e.ColumnIndex, e.RowIndex];
             dataGridView1.CurrentRow.Selected = true;
-            GetSelectedIDString();
+            SelectedRows();
         }
     }
 }
