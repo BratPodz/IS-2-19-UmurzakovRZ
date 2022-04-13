@@ -27,7 +27,7 @@ namespace IS_2_19_UmurzakovRZ
         }
         public bool InsertStudents(string fiostud, string registration_date)
         {
-            int InsertCount = 0;
+            int Insert = 0;
             bool result = false;
             conn.Open();
             string query = $"INSERT INTO t_PraktStud (fioStud, datetimeStud) VALUES ('{fiostud}', '{registration_date}')";
@@ -38,12 +38,12 @@ namespace IS_2_19_UmurzakovRZ
             }
             catch
             {
-                InsertCount = 0;
+                Insert = 0;
             }
             finally
             {
                 conn.Close();
-                if (InsertCount != 0)
+                if (Insert != 0)
                 {
                     result = true;
                 }
